@@ -27,6 +27,19 @@
     color: rgb(0, 105, 75);
 }
 
+
+.imageStyle {
+    height: 500px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .imageStyle {
+        height: 400px;
+    }
+}
+
+
 /* print container css */
 
 @media print {
