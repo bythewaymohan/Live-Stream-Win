@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100vh; */
+    background-color: #f0f0f0;
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+    height: auto;
+    width: 50%;
+    position: relative;
+}
+
+.wheel-container {
+    text-align: center;
+    position: relative;
+    width: 600px;
+    /* Ensure the container has a width */
+}
+
+#arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30px solid rgb(41, 164, 143);
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-style {
+    background-color: rgb(5, 195, 77);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.input-style {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(226, 225, 225);
+    border: none;
+}
+
+.input-style-one {
+    border-radius: 5px;
+    background-color: rgb(244, 241, 241);
+    border: 1px solid rgb(143, 142, 142);
+
+}
+
+.total-user-style {
+    background-color: rgb(5, 195, 151);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrollable-list {
+    width: 310px;
+    /* Custom width */
+    height: 200px;
+    /* Custom height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+#result {
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+#removedNames {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* #allUsers {
+    margin-left: 30px;
+    text-align: left;
+} */
+
+/* #removedNamesList,
+#allUsersList {
+    display: list-item;
+    list-style-type: none;
+    padding: 0;
+} */
+
+#removedNamesList li,
+#allUsersList li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Animated Popup CSS */
+.popup {
+
+    display: none;
+    position: fixed;
+    width: 52vw;
+    height: 55vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(192, 237, 219);
+    border: 2px solid #009f55;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 255, 85, 0.829);
+    z-index: 1000;
+    animation: popupIn 0.5s ease forwards;
+}
+
+@keyframes popupIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes popupOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+}
+
+.popup-content {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#confirmRemoveButton,
+#cancelRemoveButton {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#cancelRemoveButton:hover {
+    background-color: rgba(211, 3, 3, 0.833);
+    color: #fff;
+
+}
+
+#confirmRemoveButton:hover {
+    background-color: #009f55;
+    color: #fff;
+}
+
+/* 
+ol.list-group.list-group-striped li:nth-of-type(odd) {
+    background: blue;
+}
+
+ol.list-group.list-group-striped li:nth-of-type(even) {
+    background: purple;
+}
+
+ol.list-group.list-group-hover li:hover {
+    background: red;
+} */
+
+.SN {
+    padding: 0;
+    width: 100px;
+    border: none;
+    margin-top: -50px;
+
+}
+
+.spcific-btn {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.button-list {
+    margin-top: -40px;
+
+}
