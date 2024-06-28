@@ -1,0 +1,65 @@
+.winner_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+
+    width: auto;
+    max-width: 1500px;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(2, 201, 138, 0.683); */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 25%;
+    margin: 5px;
+    border: 2px solid rgb(0, 105, 75);
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 105, 75);
+}
+
+.slide p {
+    margin-top: 15px;
+    margin-bottom: -1px;
+    font-size: 18px;
+    color: #333;
+}
+
+.slide span {
+    color: #fff;
+    background-color: rgb(0, 105, 75);
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+    border-radius: 20px;
+
+}
+
+@media (max-width: 600px) {
+    .slide {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+    .slide {
+        min-width: 33.33%;
+    }
+}
